@@ -1,0 +1,8 @@
+{
+  "name": "portfolio-2026",
+  "version": "1.0.0",
+  "description": "Portfolio website",
+  "scripts": {
+    "sass": "sass scss/main.scss css/main.css --watch"
+  }
+}

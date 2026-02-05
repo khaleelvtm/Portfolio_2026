@@ -1,0 +1,19 @@
+// Site footer layout
+
+.site-footer {
+    border-top: 1px solid var(--color-border-subtle, #1f2933);
+    padding-block: 1.5rem;
+    background: #020617;
+    color: var(--color-text-muted, #9ca3af);
+}
+
+.site-footer-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    font-size: 0.875rem;
+}
+
+

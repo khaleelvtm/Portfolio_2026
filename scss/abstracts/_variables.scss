@@ -1,0 +1,26 @@
+// Design tokens & CSS variables
+
+:root {
+    // Typography
+    --font-family-base: "IBM Plex Sans";
+    --font-size-base: 1rem;
+    --line-height-base: 1.5;
+
+    --padding-64: clamp(2rem, 4.44vw, 6.25rem);
+}
+
+$color-bg: #FCFFFA;
+
+$color-primary: #0A5F59;
+$color-primary-light: #0C756F;
+$color-primary-lightern: #ABF6F4;
+
+$color-secondary: #FFD682;
+$color-secondary-light: #F4EFD7;
+$color-secondary-lightern: #FDFDF1;
+
+$color-text: #052E2B;
+$color-text-2: #455453;
+
+$color-white: #FFFFFF;
+$color-black: #000000;

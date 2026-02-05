@@ -1,0 +1,95 @@
+// Primary navigation
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+
+    ul {
+        display: flex;
+        gap: 32px;
+        list-style: none;
+    }
+
+    .nav-link {
+        position: relative;
+        font-size: 1rem;
+        color: $color-text-2;
+        transition: color 0.2s ease;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+            width: 100%;
+            height: 0;
+            transition: width 0.25s ease;
+            background-color: $color-primary;
+            border-radius: 0 0 2px 2px;
+        }
+
+        &:hover {
+            color: $color-primary;
+
+            &::after {
+                height: 2px;
+            }
+        }
+
+        &.active {
+            color: $color-primary;
+            font-weight: 600;
+
+            &::after {
+                height: 2px;
+            }
+        }
+    }
+}
+
+.lest-talk {
+    display: inline-flex;
+    background-color: $color-primary;
+    border-radius: 8px;
+    min-width: 140px;
+    color: $color-white;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.dark {
+    .logo {
+        g {
+            path {
+                fill: $color-white;
+            }
+        }
+
+        path {
+            fill: $color-bg
+        }
+    }
+
+    .nav {
+        .nav-link {
+            color: $color-white;
+            opacity: 0.7;
+
+            &::after {
+                background-color: $color-white;
+            }
+
+            &.active {
+                opacity: 1;
+            }
+        }
+    }
+
+    .lest-talk {
+        background-color: $color-white;
+        color: $color-primary;
+    }
+}

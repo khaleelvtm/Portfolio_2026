@@ -1,0 +1,34 @@
+// Site header layout
+
+.site-header {
+    position: fixed;
+    top: var(--padding-64);
+    padding: 0 var(--padding-64);
+    z-index: 40;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .site-header-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2.5rem;
+
+        i {
+            display: inline-flex;
+            height: 32px;
+            width: 1px;
+            background-color: $color-text-2;
+            opacity: 0.25;
+        }
+
+        .site-brand {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 600;
+        }
+    }
+}
