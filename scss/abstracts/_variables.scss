@@ -5,8 +5,6 @@
     --font-family-base: "IBM Plex Sans";
     --font-size-base: 1rem;
     --line-height-base: 1.5;
-
-    --padding-64: clamp(2rem, 4.44vw, 6.25rem);
 }
 
 $color-bg: #FCFFFA;
@@ -24,5 +22,7 @@ $color-text-2: #455453;
 
 $color-white: #FFFFFF;
 $color-black: #000000;
+
+$color-border: #E6E6E5;
 
 $transition-1 : all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);

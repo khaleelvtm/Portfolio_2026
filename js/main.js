@@ -81,6 +81,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     await loadMetaTags();
     await loadPartial("header-placeholder", "partials/header.html");
     await loadPartial("footer-placeholder", "partials/footer.html");
+    await loadPartial("modal-placeholder", "partials/modal.html");
 
     setActiveNavigation();
 });

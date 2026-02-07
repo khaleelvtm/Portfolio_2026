@@ -9,9 +9,12 @@
     display: flex;
     flex-direction: row;
     align-items: end;
+    position: relative;
 
     .hero-content {
-        flex: 0.7;
+        flex: 0.6;
+        position: relative;
+        z-index: 1;
     }
 
     .tag {
@@ -53,13 +56,25 @@
             width: 1.5rem;
         }
     }
+
+    .person-container {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+        top: -100px;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
 }
 
-.do-best-section {
-    padding: 0 5rem;
-
-    .content {
-        margin-bottom: 3.75rem;
+.do-best {
+    .content-section {
+        margin-bottom: 2.5rem;
     }
 }
 
@@ -142,6 +157,7 @@
             margin-bottom: 2.25rem;
             display: -webkit-box;
             -webkit-line-clamp: 3;
+            line-clamp: 3;
             -webkit-box-orient: vertical;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -159,23 +175,27 @@
     color: $color-white;
     display: flex;
     justify-content: space-between;
-    padding: 0 64px;
     align-items: center;
 
-    .grids {
-        flex: 0.4;
+    .stats-grid {
+        flex: 0.5;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         gap: 1.5rem;
 
-        .grid {
+        .card {
             background-color: $color-primary-light;
             border: 1px solid $color-primary-light;
             border-radius: 1.5rem;
             padding: 2rem;
-            min-width: 260px;
+            min-width: 270px;
             overflow: hidden;
             transition: $transition-1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 250px;
 
             &:hover {
                 transform: translateY(-8px) scale(1.05);
@@ -215,13 +235,12 @@
         }
     }
 
-    .content {
+    .content-section {
         flex: 0.4;
     }
 
     .section-head {
         color: $color-secondary;
-        margin-bottom: 1.5rem;
 
         &::before {
             background-color: $color-secondary;
@@ -237,5 +256,74 @@
         @include body-normal;
         line-height: 175%;
         opacity: 0.75;
+        margin-bottom: 1.5rem;
+    }
+
+    .read-more-btn {
+        display: inline-flex;
+        border: none;
+        border-bottom: 2px solid $color-white;
+        color: $color-white;
+        padding: 0.625rem 0;
+        font-weight: 600;
+        gap: 8px;
+        transition: $transition-1;
+        background: transparent;
+        cursor: pointer;
+
+        &:hover {
+            transform: translateY(-3px);
+        }
+    }
+}
+
+.work {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .content-left {
+        flex: 0.4;
+    }
+
+    .content-right {
+        flex: 0.5;
+
+        .list-item {
+            padding: 1.2rem 0;
+            border-bottom: 1px solid $color-border;
+            cursor: pointer;
+            position: relative;
+            transition: $transition-1;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -1px;
+                left: 0;
+                width: 0;
+                height: 1.5px;
+                background-color: $color-primary;
+                transition: $transition-1
+            }
+
+            &:hover {
+                padding-left: 0.625rem;
+
+                &::after {
+                    width: 100%;
+                }
+            }
+        }
+
+        .item-title {
+            font-weight: 500;
+            margin-bottom: 0.75rem;
+        }
+
+        .item-desc {
+            color: $color-text-2;
+            line-height: 175%;
+        }
     }
 }

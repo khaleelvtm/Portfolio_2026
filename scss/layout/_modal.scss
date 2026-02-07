@@ -1,0 +1,77 @@
+/* Modal Styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparentize($color-text, 0.7);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+
+    &.active {
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+
+
+.modal-content {
+    background: $color-secondary-lightern;
+    width: 100%;
+    max-width: 44rem;
+    padding: 4rem;
+    border-radius: 2rem;
+    position: relative;
+    transform: translateY(100px);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 40px 100px transparentize($color-text, 0.5);
+
+    .section-title {
+        margin-bottom: 1rem;
+    }
+
+    .section-text {
+        margin-bottom: 1rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.modal-overlay.active .modal-content {
+    transform: translateY(0);
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    color: $color-text-2;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    transition: $transition-1;
+
+    &:hover {
+        color: $color-text;
+        transform: scale(1.3);
+    }
+}

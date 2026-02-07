@@ -1,9 +1,8 @@
 // Site header layout
-
 .site-header {
     position: fixed;
-    top: var(--padding-64);
-    padding: 0 var(--padding-64);
+    top: 2rem;
+    padding: 0 4rem;
     z-index: 40;
     width: 100%;
     display: flex;
@@ -25,10 +24,15 @@
         }
 
         .site-brand {
-            display: flex;
+            display: inline-flex;
             align-items: center;
             gap: 0.5rem;
             font-weight: 600;
+
+            svg {
+                height: 2.5rem;
+                width: auto;
+            }
         }
     }
 }

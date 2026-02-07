@@ -16,7 +16,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 4rem;
+        padding: 5rem 4rem 2rem;
 
+        &.hero {
+            padding-top: 8.375rem;
+        }
     }
 }

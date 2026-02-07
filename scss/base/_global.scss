@@ -13,9 +13,7 @@ body {
 
 .container {
     width: 100%;
-    max-width: var(--page-max-width, 1120px);
-    margin-inline: auto;
-    padding-inline: var(--page-gutter, 1.5rem);
+    padding: 0 4rem;
 }
 
 section {
@@ -33,6 +31,7 @@ section {
     align-items: flex-end;
     line-height: 13px;
     font-weight: 500;
+    margin-bottom: 1.2rem;
 
     &::before {
         content: '';

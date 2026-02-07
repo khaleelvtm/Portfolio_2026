@@ -1,19 +1,156 @@
 // Site footer layout
 
-.site-footer {
-    border-top: 1px solid var(--color-border-subtle, #1f2933);
-    padding-block: 1.5rem;
-    background: #020617;
-    color: var(--color-text-muted, #9ca3af);
+.footer {
+    background-color: $color-primary;
+    color: $color-white;
+    position: relative;
+
+    #footer-placeholder {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        padding-top: 4rem;
+    }
 }
 
-.site-footer-inner {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.75rem;
-    font-size: 0.875rem;
+.footer-card {
+    background-color: $color-primary-light;
+    border: 1px solid transparentize($color-primary-lightern, 0.8);
+    width: 100%;
+    border-radius: 3.75rem;
+    padding: 3.75rem 5.5rem;
+    position: relative;
+    box-shadow: 0 10px 30px transparentize($color-text, 0.75);
+
+    .footer-top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        .footer-left {
+            flex: 0.6;
+
+            .label {
+                font-weight: 400;
+            }
+
+            .footer-email {
+                font-size: clamp(1.25rem, 2.22vw, 3.56rem);
+                font-weight: 500;
+                text-decoration: none;
+                display: inline-flex;
+                transition: $transition-1;
+
+                &:hover {
+                    color: $color-secondary;
+                    transform: translateX(5px);
+                }
+            }
+
+            .brand-col {
+                padding-top: 3.75rem;
+
+                .logo {
+                    display: inline-flex;
+                    margin-bottom: 0.75rem;
+                }
+
+                .text {
+                    line-height: 175%;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .footer-right {
+            flex: 0.3;
+        }
+
+
+    }
+
+    .social-links {
+        display: flex;
+        gap: 1.25rem;
+        margin-top: 2.5rem;
+        list-style: none;
+
+        li {
+            border-right: 1px solid transparentize($color-white, 0.9);
+            display: inline-flex;
+            padding-right: 1rem;
+
+            &:last-child {
+                border: none;
+                padding-right: 0;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 0.875rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            transition: $transition-1;
+            display: inline-flex;
+            height: 1rem;
+            align-items: center;
+
+            &:hover {
+                opacity: 1;
+                color: $color-secondary;
+                transform: translateY(-3px);
+            }
+        }
+    }
+
+    .copyright {
+        padding-top: 2.5rem;
+        margin-top: 2.5rem;
+        border-top: 1px solid transparentize($color-white, 0.9);
+        font-size: 0.875rem;
+        text-align: center;
+        letter-spacing: 2px;
+    }
+
+    .nav-col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+
+        .nav-item {
+            text-decoration: none;
+            font-size: 1.05rem;
+            font-weight: 400;
+            margin: 10px 0;
+            transition: $transition-1;
+            display: inline-flex;
+
+            &:hover {
+                color: $color-secondary;
+                transform: translateX(8px);
+            }
+        }
+    }
 }
 
-
+.bg-text-decoration {
+    position: absolute;
+    font-size: 21.25rem;
+    font-weight: 700;
+    background: linear-gradient(0deg, transparentize($color-primary-light, 1), $color-primary-light);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    pointer-events: none;
+    white-space: nowrap;
+    bottom: -93px;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    line-height: 300px;
+    text-align: center;
+    opacity: 0.4;
+}
