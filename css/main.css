@@ -474,8 +474,7 @@ p {
 
 .modal-content {
   background: #FDFDF1;
-  width: 100%;
-  max-width: 44rem;
+  width: 60%;
   padding: 4rem;
   border-radius: 2rem;
   position: relative;
