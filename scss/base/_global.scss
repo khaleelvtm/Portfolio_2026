@@ -44,5 +44,62 @@ section {
 
 .section-title {
     font-weight: 400;
+    line-height: 150%;
+}
+
+.section-text {
+    @include body-normal;
+    font-weight: 400;
     line-height: 175%;
+}
+
+.tag {
+    background-color: $color-secondary;
+    height: 2.25rem;
+    border-radius: 2rem;
+    padding: 0 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.page-head-section {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+    .content-section {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding: 0 8rem;
+
+        .tag {
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            font-weight: 300;
+        }
+
+        .left-content {
+            flex: 0.4;
+        }
+
+        .right-content {
+            flex: 0.4;
+        }
+
+        .section-text {
+            font-weight: 400;
+        }
+    }
+
+    .banner {
+        img {
+            width: 100%;
+        }
+    }
+
 }

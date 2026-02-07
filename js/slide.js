@@ -1,35 +1,36 @@
 let currentSlide = 0;
-const totalSlides = 5;
 let isScrolling = false;
 const slider = document.getElementById("slider");
+const totalSlides = slider ? slider.querySelectorAll('.slide').length : 0;
 
 function goToSlide(index) {
-    if (index < 0 || index >= totalSlides) return;
-
+    if (!slider || index < 0 || index >= totalSlides) return;
     currentSlide = index;
-
     slider.style.transform = `translateY(-${currentSlide * 100}vh)`;
 }
 
-window.addEventListener(
-    "wheel",
-    (e) => {
-        if (isScrolling) return;
+// Only add wheel event listener if slider exists and has slides
+if (slider && totalSlides > 0) {
+    window.addEventListener(
+        "wheel",
+        (e) => {
+            if (isScrolling) return;
 
-        if (e.deltaY > 0) {
-            if (currentSlide < totalSlides - 1) {
-                goToSlide(currentSlide + 1);
-                setScrollTimeout();
+            if (e.deltaY > 0) {
+                if (currentSlide < totalSlides - 1) {
+                    goToSlide(currentSlide + 1);
+                    setScrollTimeout();
+                }
+            } else {
+                if (currentSlide > 0) {
+                    goToSlide(currentSlide - 1);
+                    setScrollTimeout();
+                }
             }
-        } else {
-            if (currentSlide > 0) {
-                goToSlide(currentSlide - 1);
-                setScrollTimeout();
-            }
-        }
-    },
-    { passive: false }
-);
+        },
+        { passive: false }
+    );
+}
 
 function setScrollTimeout() {
     isScrolling = true;

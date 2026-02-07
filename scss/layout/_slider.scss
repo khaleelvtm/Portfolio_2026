@@ -21,5 +21,15 @@
         &.hero {
             padding-top: 8.375rem;
         }
+
+        &.page-head {
+            padding: 5rem 0 0;
+            justify-content: flex-end;
+        }
+
+        &.pr-pd {
+            padding: 0;
+            justify-content: end;
+        }
     }
 }

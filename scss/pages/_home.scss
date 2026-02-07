@@ -17,17 +17,6 @@
         z-index: 1;
     }
 
-    .tag {
-        background-color: $color-secondary;
-        height: 2.25rem;
-        border-radius: 2rem;
-        padding: 0 1rem;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: 500;
-    }
-
     .hello {
         font-weight: 500;
     }
@@ -254,7 +243,6 @@
 
     .section-text {
         @include body-normal;
-        line-height: 175%;
         opacity: 0.75;
         margin-bottom: 1.5rem;
     }
