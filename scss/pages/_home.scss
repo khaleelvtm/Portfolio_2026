@@ -96,6 +96,7 @@
         padding: 2.5rem;
         position: relative;
         overflow: hidden;
+        cursor: pointer;
 
         &::before {
             content: '';
@@ -277,6 +278,7 @@
         background: transparent;
         cursor: pointer;
         overflow: hidden;
+        position: relative;
 
         &::before {
             content: '';

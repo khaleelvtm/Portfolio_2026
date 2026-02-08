@@ -1,0 +1,349 @@
+[
+    {
+        "label": "Product Strategy & Roadmapping",
+        "badge": "Product Strategy",
+        "category": "UX Strategy & Architecture",
+        "text": "Strategic planning to turn ideas into a phased, achievable product roadmap.",
+        "points": [
+            "Product vision & UX direction",
+            "Feature prioritization (MVP → Scale)",
+            "UX-led product roadmap",
+            "Risk and dependency identification"
+        ]
+    },
+    {
+        "label": "UX Research & Discovery",
+        "badge": "UX Research",
+        "category": "UX Strategy & Architecture",
+        "text": "Deep understanding of users, problems, and opportunities before design.",
+        "points": [
+            "Stakeholder interviews",
+            "User research & insights",
+            "Problem definition & hypotheses",
+            "UX opportunity mapping"
+        ]
+    },
+    {
+        "label": "Information Architecture (IA)",
+        "badge": "IA",
+        "category": "UX Strategy & Architecture",
+        "text": "Structuring content and features so users can find what they need effortlessly.",
+        "points": [
+            "Logical content hierarchy",
+            "Navigation structure",
+            "Sitemap & taxonomy design",
+            "Reduced cognitive load"
+        ]
+    },
+    {
+        "label": "User Flow & Journey Mapping",
+        "badge": "User Journey",
+        "category": "UX Strategy & Architecture",
+        "text": "Visualizing how users move through your product to achieve goals.",
+        "points": [
+            "End-to-end user flows",
+            "Journey maps with pain points",
+            "Decision paths & edge cases",
+            "Experience optimization insights"
+        ]
+    },
+    {
+        "label": "Web Application Design",
+        "badge": "Web App UX",
+        "category": "Product Design (UI / UX)",
+        "text": "Designing powerful, user-friendly web applications for modern businesses.",
+        "points": [
+            "Dashboard & system UI design",
+            "UX-driven layouts",
+            "Scalable component patterns",
+            "Business-ready interfaces"
+        ]
+    },
+    {
+        "label": "Mobile Application Design (iOS / Android)",
+        "badge": "Mobile UX",
+        "category": "Product Design (UI / UX)",
+        "text": "Designing mobile experiences optimized for real-world usage and platform guidelines.",
+        "points": [
+            "iOS & Android-ready UI",
+            "Gesture-friendly interactions",
+            "Platform-specific UX patterns",
+            "Smooth user journeys"
+        ]
+    },
+    {
+        "label": "SaaS Application Design",
+        "badge": "SaaS UX",
+        "category": "Product Design (UI / UX)",
+        "text": "Designing complex SaaS products that feel simple and intuitive.",
+        "points": [
+            "Multi-role UX design",
+            "Scalable design systems",
+            "Clean, feature-rich interfaces",
+            "Retention-focused UX decisions"
+        ]
+    },
+    {
+        "label": "Wireframing & Prototyping",
+        "badge": "Prototyping",
+        "category": "Product Design (UI / UX)",
+        "text": "Visualizing ideas early to validate flows and functionality.",
+        "points": [
+            "Low & high-fidelity wireframes",
+            "Clickable prototypes",
+            "UX validation before development",
+            "Faster stakeholder alignment"
+        ]
+    },
+    {
+        "label": "Accessibility & Inclusive Design",
+        "badge": "Accessibility",
+        "category": "Product Design (UI / UX)",
+        "text": "Designing products usable by everyone, regardless of ability.",
+        "points": [
+            "WCAG-aligned design practices",
+            "Contrast & typography standards",
+            "Keyboard & screen reader support",
+            "Inclusive UX decisions"
+        ]
+    },
+    {
+        "category": "Design Systems & UI Engineering",
+        "label": "Design System Creation",
+        "badge": "Design Systems",
+        "text": "Creating a unified system that governs how your product looks and behaves.",
+        "points": [
+            "Design principles & foundations",
+            "Scalable component structure",
+            "Brand-aligned UI patterns",
+            "Cross-product consistency"
+        ]
+    },
+    {
+        "category": "Design Systems & UI Engineering",
+        "label": "UI Kit & Component Libraries",
+        "badge": "UI Kits",
+        "text": "Reusable, production-ready components for faster design and development.",
+        "points": [
+            "Atomic & modular components",
+            "Figma-ready UI kits",
+            "Reusable layout patterns",
+            "Reduced design duplication"
+        ]
+    },
+    {
+        "category": "Design Systems & UI Engineering",
+        "label": "Dark Mode & Theming",
+        "badge": "Theming",
+        "text": "Designing adaptable themes without breaking usability or brand identity.",
+        "points": [
+            "Light & dark mode support",
+            "Theme logic & rules",
+            "Accessibility-safe contrasts",
+            "Scalable theme architecture"
+        ]
+    },
+    {
+        "category": "Design Systems & UI Engineering",
+        "label": "UX Documentation & Playbooks",
+        "badge": "UX Docs",
+        "text": "Documenting UX decisions so teams can work consistently and independently.",
+        "points": [
+            "Component usage rules",
+            "UX best practices",
+            "Interaction standards",
+            "Onboarding-ready documentation"
+        ]
+    },
+    {
+        "category": "Design Systems & UI Engineering",
+        "label": "Developer Handoff & Specs",
+        "badge": "Dev Handoff",
+        "text": "Ensuring seamless transition from design to development.",
+        "points": [
+            "Detailed design specs",
+            "Interaction & state documentation",
+            "Asset export & guidance",
+            "Reduced dev back-and-forth"
+        ]
+    },
+    {
+        "category": "Web Design & Development",
+        "label": "Website Design (Marketing & Corporate)",
+        "badge": "Website Design",
+        "text": "Designing websites that communicate clearly and convert effectively.",
+        "points": [
+            "Brand-aligned visual design",
+            "Conversion-focused page layouts",
+            "Clear content hierarchy",
+            "Modern, professional UI"
+        ]
+    },
+    {
+        "label": "Website Development",
+        "badge": "Web Development",
+        "text": "Building robust, production-ready websites using modern web technologies.",
+        "points": [
+            "Clean, maintainable code",
+            "SEO-friendly structure",
+            "Responsive implementation",
+            "Secure & scalable setup"
+        ]
+    },
+    {
+        "category": "Web Design & Development",
+        "label": "Web Performance Optimization",
+        "badge": "Performance",
+        "text": "Optimizing websites for speed, stability, and user experience.",
+        "points": [
+            "Core Web Vitals improvement",
+            "Faster load times",
+            "Optimized assets & rendering",
+            "Performance-first UX decisions"
+        ]
+    },
+    {
+        "category": "Web Design & Development",
+        "label": "Headless CMS UX",
+        "badge": "Headless CMS",
+        "text": "Designing and structuring content experiences using headless CMS platforms.",
+        "points": [
+            "CMS content modeling",
+            "Editor-friendly UX",
+            "Scalable content architecture",
+            "Frontend–backend separation"
+        ]
+    },
+    {
+        "category": "Web Design & Development",
+        "label": "Static & Dynamic Websites",
+        "badge": "Web Architecture",
+        "text": "Choosing the right architecture based on business and content needs.",
+        "points": [
+            "Static site performance benefits",
+            "Dynamic content handling",
+            "SEO & caching optimization",
+            "Cost-effective deployment"
+        ]
+    },
+    {
+        "category": "Web Design & Development",
+        "label": "No-Code / Low-Code Development",
+        "badge": "No-Code",
+        "text": "Rapid website development using no-code or low-code platforms.",
+        "points": [
+            "Faster time-to-market",
+            "Scalable no-code solutions",
+            "Custom UX patterns",
+            "Reduced development overhead"
+        ]
+    },
+    {
+        "category": "CMS & E-Commerce Solutions",
+        "label": "WordPress Design & Development",
+        "badge": "WordPress",
+        "text": "Custom WordPress websites built for performance, flexibility, and usability.",
+        "points": [
+            "Custom themes & layouts",
+            "UX-driven page structures",
+            "SEO-friendly setup",
+            "Easy content management"
+        ]
+    },
+    {
+        "category": "CMS & E-Commerce Solutions",
+        "label": "Shopify Design & Development",
+        "badge": "Shopify",
+        "text": "Designing and developing high-converting Shopify stores.",
+        "points": [
+            "Custom storefront design",
+            "Product & collection UX",
+            "Theme customization",
+            "Conversion-focused layouts"
+        ]
+    },
+    {
+        "category": "CMS & E-Commerce Solutions",
+        "label": "E-Commerce UX Optimization",
+        "badge": "E-Commerce UX",
+        "text": "Improving user journeys to increase conversions and reduce friction.",
+        "points": [
+            "Checkout flow optimization",
+            "Cart & product page UX",
+            "Conversion bottleneck analysis",
+            "UX improvements backed by insights"
+        ]
+    },
+    {
+        "category": "CMS & E-Commerce Solutions",
+        "label": "WooCommerce Solutions",
+        "badge": "WooCommerce",
+        "text": "Flexible e-commerce solutions for WordPress-based businesses.",
+        "points": [
+            "Custom WooCommerce setup",
+            "Product & order UX flows",
+            "Payment & shipping integration",
+            "Scalable store architecture"
+        ]
+    },
+    {
+        "category": "Branding & Visual Identity",
+        "label": "Brand Strategy & Positioning",
+        "badge": "Brand Strategy",
+        "text": "Defining the foundation of your brand before visual design begins.",
+        "points": [
+            "Brand purpose & vision",
+            "Market & competitor positioning",
+            "Brand personality & tone",
+            "Clear differentiation strategy"
+        ]
+    },
+    {
+        "category": "Branding & Visual Identity",
+        "label": "Brand Identity Design",
+        "badge": "Brand Identity",
+        "text": "Creating a cohesive visual language that represents your brand.",
+        "points": [
+            "Color, typography & visual direction",
+            "Visual consistency across touchpoints",
+            "Scalable identity system",
+            "Digital-first brand design"
+        ]
+    },
+    {
+        "category": "Branding & Visual Identity",
+        "label": "Logo Design",
+        "badge": "Logo Design",
+        "text": "Designing logos that are simple, timeless, and recognizable.",
+        "points": [
+            "Concept-driven logo design",
+            "Multiple logo variations",
+            "Scalability & adaptability",
+            "Brand-aligned symbolism"
+        ]
+    },
+    {
+        "category": "Branding & Visual Identity",
+        "label": "Brand Guidelines",
+        "badge": "Brand Guidelines",
+        "text": "Documenting brand rules to ensure long-term consistency.",
+        "points": [
+            "Logo usage & spacing rules",
+            "Color & typography guidelines",
+            "Visual do’s & don’ts",
+            "Brand consistency framework"
+        ]
+    },
+    {
+        "category": "Branding & Visual Identity",
+        "label": "Marketing Creatives & Visual Assets",
+        "badge": "Marketing Design",
+        "text": "Designing marketing visuals that strengthen brand presence.",
+        "points": [
+            "Social media creatives",
+            "Website & campaign assets",
+            "Presentation & pitch visuals",
+            "Consistent brand application"
+        ]
+    }
+]

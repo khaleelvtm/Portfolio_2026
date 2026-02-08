@@ -1,0 +1,96 @@
+// What i do page specific styles
+
+.what {
+    display: flex;
+    // gap: 5rem;
+    justify-content: space-between;
+    align-items: center;
+
+    .left-section {
+        flex: 0.4;
+    }
+
+    .right-section {
+        flex: 0.5;
+
+        .image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 20rem;
+            margin-bottom: 1rem;
+
+            img {
+                max-height: 100%;
+            }
+        }
+    }
+
+    .section-title {
+        margin-bottom: 1rem;
+        font-size: clamp(1.125rem, 1.94vw, 2.68rem);
+    }
+
+    .section-text {
+        margin-bottom: 2rem;
+        @include body-normal;
+    }
+
+    .list-items {
+        .item {
+            display: flex;
+            padding: 0.4rem 1rem;
+            border-left: 3px solid $color-secondary-light;
+            cursor: pointer;
+            font-size: 1rem;
+            color: transparentize($color-text-2, 0.4);
+            transition: $transition-2;
+            font-weight: 400;
+            margin: 1rem 0;
+
+            &.active {
+                color: $color-primary-light;
+                border-color: $color-primary-light;
+                font-weight: 500;
+                padding-left: 1.5rem;
+            }
+        }
+    }
+}
+
+.details-area {
+    background: $color-secondary-lightern;
+    border-radius: 20px;
+    padding: 1.5rem;
+    border: 1px solid $color-secondary-light;
+
+    .tag {
+        margin-bottom: 1rem;
+    }
+
+    .details-desc {
+        @include body-normal;
+        line-height: 175%;
+        margin-bottom: 1rem;
+    }
+
+    .details-list {
+        padding-left: 1.5rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px;
+
+        li {
+            padding: 0 0.5rem;
+
+            &::marker {
+                color: $color-secondary;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

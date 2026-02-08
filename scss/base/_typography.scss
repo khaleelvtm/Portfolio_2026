@@ -45,7 +45,7 @@ p {
 }
 
 @mixin body-normal {
-    font-size: clamp(0.9375rem, 1.25vw, 2rem); // 15px -> 18px @1440 -> 32px @2560
+    font-size: clamp(0.875rem, 1.11vw, 1.5rem); // 14px -> 16px @1440 -> 24px @2560
 }
 
 @mixin body-small {
