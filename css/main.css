@@ -52,6 +52,22 @@
   --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='%23000' stroke-linejoin='round' stroke-width='1.5'%3E%3Ccircle cx='15' cy='12' r='3'/%3E%3Cpath d='M9 21a3 3 0 0 0 3-3v-3H9a3 3 0 1 0 0 6Z'/%3E%3Cpath stroke-linecap='round' d='M12 9v6H9a3 3 0 1 1 0-6zm0-6v6H9a3 3 0 0 1 0-6zm0 0v6h3a3 3 0 1 0 0-6z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
+.hugeicons--call-ringing-02 {
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m4.912 10.541l2.64-2.64a2.08 2.08 0 0 0 .507-2.064a27 27 0 0 1-.49-1.844C7.453 3.45 6.976 3 6.42 3H4.912c-1.11 0-2.023.904-1.901 2.008c.926 8.392 7.59 15.055 15.981 15.981c1.104.122 2.008-.79 2.008-1.9v-1.51c0-.554-.452-1.01-.998-1.11a15 15 0 0 1-1.774-.459c-.767-.244-1.619-.072-2.188.496l-2.581 2.582m4.041-8.086L20 11m-7-4.498V4m4.95 2.05l-1.77 1.77'/%3E%3C/svg%3E");
+}
+
+.hugeicons--whatsapp {
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='%23000' stroke-width='1.5'%3E%3Cpath stroke-linejoin='round' d='M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12c0 1.379.28 2.693.784 3.888c.279.66.418.99.436 1.24c.017.25-.057.524-.204 1.073L2 22l3.799-1.016c.549-.147.823-.22 1.073-.204c.25.018.58.157 1.24.436A10 10 0 0 0 12 22Z'/%3E%3Cpath d='m8.588 12.377l.871-1.081c.367-.456.82-.88.857-1.488c.008-.153-.1-.841-.315-2.218C9.916 7.049 9.41 7 8.973 7c-.57 0-.855 0-1.138.13c-.358.163-.725.622-.806 1.007c-.064.305-.016.515.079.935c.402 1.783 1.347 3.544 2.811 5.009c1.465 1.464 3.226 2.409 5.01 2.811c.42.095.629.143.934.079c.385-.08.844-.448 1.008-.806c.129-.283.129-.568.129-1.138c0-.438-.049-.943-.59-1.028c-1.377-.216-2.065-.323-2.218-.315c-.607.036-1.032.49-1.488.857l-1.081.87'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.hugeicons--linkedin-01 {
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='%23000' stroke-linejoin='round' stroke-width='1'%3E%3Cpath stroke-linecap='round' stroke-width='1.5' d='M7 10v7m4-4v4m0-4a3 3 0 1 1 6 0v4m-6-4v-3'/%3E%3Cpath stroke-linecap='round' stroke-width='2' d='M7.008 7h-.009'/%3E%3Cpath stroke-width='1.5' d='M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12 2.5c4.478 0 6.718 0 8.109 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.718 0-8.109-1.391S2.5 16.479 2.5 12Z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.hugeicons--globe {
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='%23000' stroke-width='1.5'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M12.5 19v3m-2 0h4'/%3E%3Ccircle cx='7' cy='7' r='7' stroke-linecap='round' transform='matrix(-1 0 0 1 20.5 2)'/%3E%3Cpath stroke-linejoin='round' d='M8.5 4c.654.038.992.359 1.573.973c1.05 1.11 2.1 1.202 2.8.832c1.049-.555.167-1.453 1.399-1.94c.803-.32.915-1.185.468-1.865M20 10c-1.5 0-1.766 1.247-3 1c-2.5-.5-3.208.059-3.208 1.251s0 1.192-.52 2.086c-.338.582-.457 1.163.217 1.663'/%3E%3Cpath stroke-linecap='round' d='M6.5 2a9.85 9.85 0 0 0-3 7.083C3.5 14.56 7.977 19 13.5 19a10 10 0 0 0 7-2.835'/%3E%3C/g%3E%3C/svg%3E");
+}
+
 *,
 *::before,
 *::after {
@@ -1319,6 +1335,99 @@ section {
 }
 .details-area .details-list li:last-child {
   margin-bottom: 0;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact .left-section {
+  flex: 0.5;
+}
+.contact .right-section {
+  flex: 0.4;
+}
+.contact .section-title {
+  margin-bottom: 1rem;
+}
+.contact .section-text {
+  margin-bottom: 1rem;
+}
+.contact .location {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.contact .location i {
+  height: 2.5rem;
+  width: 2.5rem;
+  color: #0C756F;
+}
+.contact .location span {
+  font-size: clamp(1rem, 1.39vw, 2.18rem);
+}
+.contact .email {
+  background: url(../../assets/images/email-bg.png) no-repeat center center/cover;
+  overflow: hidden;
+  border-radius: 2rem;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  pointer-events: auto;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.contact .email:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 5px 20px rgba(69, 84, 83, 0.2);
+}
+.contact .email .label {
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+.contact .email .value {
+  font-size: clamp(0.875rem, 1.11vw, 1.5rem);
+  font-weight: 500;
+}
+.contact .contact-card {
+  background-color: #FFFFFF;
+  padding: 2rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(69, 84, 83, 0.1);
+  box-shadow: 0 5px 20px rgba(69, 84, 83, 0.1);
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.contact .contact-card:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 5px 20px rgba(69, 84, 83, 0.2);
+  border-color: rgba(12, 117, 111, 0.3);
+}
+.contact .contact-card:last-child {
+  margin-bottom: 0;
+}
+.contact .contact-card .label {
+  font-size: clamp(1rem, 1.25vw, 2rem);
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.contact .contact-card .foot {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.contact .contact-card .foot .value {
+  font-weight: 500;
+}
+.contact .contact-card .foot i {
+  height: 2.5rem;
+  width: 2.5rem;
+  color: #0C756F;
 }
 
 /*# sourceMappingURL=main.css.map */

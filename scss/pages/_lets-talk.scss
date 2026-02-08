@@ -1,0 +1,113 @@
+// Lets talk page specific styles
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .left-section {
+        flex: 0.5;
+    }
+
+    .right-section {
+        flex: 0.4;
+    }
+
+    .section-title {
+        margin-bottom: 1rem;
+    }
+
+    .section-text {
+        margin-bottom: 1rem;
+    }
+
+    .location {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 2rem;
+
+        i {
+            height: 2.5rem;
+            width: 2.5rem;
+            color: $color-primary-light;
+        }
+
+        span {
+            font-size: clamp(1rem, 1.39vw, 2.18rem)
+        }
+    }
+
+    .email {
+        background: url(../../assets/images/email-bg.png) no-repeat center center / cover;
+        overflow: hidden;
+        border-radius: 2rem;
+        padding: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        pointer-events: auto;
+        cursor: pointer;
+        transition: $transition-1;
+
+        &:hover {
+            transform: translateY(-4px) scale(1.05);
+            box-shadow: 0 5px 20px transparentize($color-text-2, 0.8);
+        }
+
+        .label {
+            font-weight: 500;
+            margin-bottom: 2rem;
+        }
+
+        .value {
+            @include body-normal;
+            font-weight: 500;
+        }
+    }
+
+    .contact-card {
+        background-color: $color-white;
+        padding: 2rem;
+        border-radius: 2rem;
+        border: 1px solid transparentize($color-text-2, 0.9);
+        box-shadow: 0 5px 20px transparentize($color-text-2, 0.9);
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        transition: $transition-1;
+
+        &:hover {
+            transform: translateY(-4px) scale(1.05);
+            box-shadow: 0 5px 20px transparentize($color-text-2, 0.8);
+            border-color: transparentize($color-primary-light, 0.7);
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        .label {
+            @include body-large;
+            font-weight: 400;
+            margin-bottom: 1rem;
+
+        }
+
+        .foot {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+
+            .value {
+                font-weight: 500;
+            }
+
+            i {
+                height: 2.5rem;
+                width: 2.5rem;
+                color: $color-primary-light;
+            }
+        }
+    }
+}
