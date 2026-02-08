@@ -40,6 +40,24 @@
         padding: 0.625rem 0;
         font-weight: 600;
         gap: 8px;
+        overflow: hidden;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(120deg, transparent, transparentize($color-primary-light, 0.8), transparent);
+            transition: 0.6s;
+        }
+
+        &:hover {
+            &::before {
+                top: -100%;
+            }
+        }
 
         img {
             width: 1.5rem;
@@ -258,9 +276,24 @@
         transition: $transition-1;
         background: transparent;
         cursor: pointer;
+        overflow: hidden;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(120deg, transparent, transparentize($color-white, 0.8), transparent);
+            transition: 0.6s;
+        }
 
         &:hover {
             transform: translateY(-3px);
+
+            &::before {
+                top: -100%;
+            }
         }
     }
 }

@@ -1,0 +1,168 @@
+// Case Studies page specific styles
+
+.portfolio {
+    display: flex;
+    gap: 4rem;
+
+    .dribbble-section {
+        background-color: #DD3E7B;
+
+        &::after {
+            content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='%23000' stroke-width='1.5'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath stroke-linejoin='round' d='M22 13.264A15.5 15.5 0 0 0 19.147 13C13.795 13 9.034 15.742 6 20M19 5c-3.13 3.667-7.832 6-13.09 6c-1.346 0-2.655-.153-3.91-.441'/%3E%3Cpath stroke-linejoin='round' d='M14.618 22A18.6 18.6 0 0 0 15 18.24C15 11.926 11.834 6.347 7 3'/%3E%3C/g%3E%3C/svg%3E")
+        }
+
+        &:hover {
+            box-shadow: 0 20px 40px transparentize(#DD3E7B, 0.7);
+        }
+    }
+
+    .behance-section {
+        background-color: #005CFF;
+
+        &::after {
+            content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M2 12h5.625M7.4 5H4c-.943 0-1.414 0-1.707.293S2 6.057 2 7v10c0 .943 0 1.414.293 1.707S3.057 19 4 19h3.4c1.988 0 3.6-1.567 3.6-3.5S9.388 12 7.4 12c1.988 0 3.6-1.567 3.6-3.5S9.388 5 7.4 5M20 7h-4m-2 7h8c0-2.041-1.79-4-4-4s-4 1.959-4 4m0 0v1a4 4 0 0 0 7.465 2'/%3E%3C/svg%3E");
+        }
+
+        &:hover {
+            box-shadow: 0 20px 40px transparentize(#005CFF, 0.7);
+        }
+    }
+
+    .dribbble-section,
+    .behance-section {
+        color: $color-white;
+        border-radius: 2rem;
+        padding: 5rem;
+        overflow: hidden;
+        position: relative;
+        transition: $transition-1;
+
+        &:hover {
+            transform: translateY(-8px) scale(1.05);
+
+            &::after {
+                transform: scale(1.1) rotate(-5deg);
+            }
+        }
+
+        &::after {
+            position: absolute;
+            bottom: -120px;
+            right: -50px;
+            width: 500px;
+            opacity: 0.1;
+            z-index: 0;
+            transition: $transition-1;
+        }
+
+        .section-head {
+            color: $color-white;
+            position: relative;
+            z-index: 1;
+
+            &::before {
+                background-color: $color-white;
+            }
+        }
+
+        .section-title {
+            position: relative;
+            z-index: 1;
+            margin-bottom: 1rem;
+        }
+
+        .section-text {
+            margin-bottom: 5rem;
+            position: relative;
+            z-index: 1;
+        }
+    }
+}
+
+.figma-section {
+    background: url(../../assets/images/figma-bg.png) no-repeat center center / cover;
+    border-radius: 2rem;
+    padding: 5rem 3.75rem;
+    color: $color-white;
+    position: relative;
+    overflow: hidden;
+    transition: $transition-1;
+
+    &::after {
+        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='%23000' stroke-linejoin='round' stroke-width='1.5'%3E%3Ccircle cx='15' cy='12' r='3'/%3E%3Cpath d='M9 21a3 3 0 0 0 3-3v-3H9a3 3 0 1 0 0 6Z'/%3E%3Cpath stroke-linecap='round' d='M12 9v6H9a3 3 0 1 1 0-6zm0-6v6H9a3 3 0 0 1 0-6zm0 0v6h3a3 3 0 1 0 0-6z'/%3E%3C/g%3E%3C/svg%3E");
+        position: absolute;
+        bottom: -120px;
+        right: -50px;
+        width: 500px;
+        opacity: 0.1;
+        z-index: 0;
+        transition: $transition-1;
+    }
+
+    &:hover {
+        transform: translateY(-8px) scale(1.05);
+
+        &::after {
+            transform: scale(1.1) rotate(-5deg);
+        }
+    }
+
+    .section-head {
+        color: $color-white;
+        position: relative;
+        z-index: 1;
+
+        &::before {
+            background-color: $color-white;
+        }
+    }
+
+    .section-title {
+        position: relative;
+        z-index: 1;
+        margin-bottom: 1rem;
+    }
+
+    .section-text {
+        font-size: clamp(1rem, 1.39vw, 2.18rem);
+        margin-bottom: 10rem;
+        position: relative;
+        z-index: 1;
+    }
+
+
+}
+
+.open-link {
+    display: inline-flex;
+    border: none;
+    border-bottom: 2px solid $color-white;
+    color: $color-white;
+    padding: 0.625rem 0;
+    font-weight: 600;
+    gap: 8px;
+    transition: $transition-1;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(120deg, transparent, transparentize($color-white, 0.7), transparent);
+        transition: 0.6s;
+    }
+
+    &:hover {
+        transform: translateY(-3px);
+
+        &::before {
+            top: -100%;
+        }
+    }
+}
