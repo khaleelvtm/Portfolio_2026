@@ -23,20 +23,36 @@ h3 {
 
 h4 {
     font-size: clamp(1.25rem, 2.22vw, 3.56rem); // 20px -> 32px @1440 -> 57px @2560
+
+    @include respond(lg) {
+        font-size: 1rem;
+    }
 }
 
 h5 {
     font-size: clamp(1.125rem, 1.67vw, 2.68rem); // 18px -> 24px @1440 -> 43px @2560
 
+    @include respond(lg) {
+        font-size: 1rem;
+    }
+
 }
 
 h6 {
     font-size: clamp(1rem, 1.39vw, 2.18rem); ///* 16px -> 20px @1440 -> 35px @2560
+
+    @include respond(lg) {
+        font-size: 1rem;
+    }
 }
 
 
 p {
     font-size: clamp(0.875rem, 1.11vw, 1.75rem); // 14px -> 16px @1440 -> 28px @2560
+
+    @include respond(lg) {
+        font-size: 1rem;
+    }
 }
 
 

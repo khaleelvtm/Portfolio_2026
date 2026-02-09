@@ -3,12 +3,58 @@
 .nav {
     display: flex;
     align-items: center;
-    gap: 1.25rem;
+    gap: 2.5rem;
 
-    ul {
-        display: flex;
-        gap: 32px;
-        list-style: none;
+    @include respond(lg) {
+        position: fixed;
+        transform: translateX(100%);
+        transition: $transition-1;
+        background-color: $color-white;
+        opacity: 0;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        width: 80%;
+        padding: 6rem 2rem;
+        height: 100%;
+        flex-direction: column;
+        align-items: baseline;
+
+        &.active {
+            transform: translateX(0%);
+            opacity: 1;
+
+            .nav-link {
+                opacity: 1;
+                transform: translateY(0);
+
+                &:nth-child(1) {
+                    transition-delay: 0.2s;
+                }
+
+                &:nth-child(2) {
+                    transition-delay: 0.35s;
+                }
+
+                &:nth-child(3) {
+                    transition-delay: 0.5s;
+                }
+
+                &:nth-child(4) {
+                    transition-delay: 0.65s;
+                }
+
+                &:nth-child(5) {
+                    transition-delay: 0.65s;
+                }
+            }
+
+            .lest-talk {
+                opacity: 1;
+                transform: translateY(0);
+                transition-delay: 0.8s;
+            }
+        }
     }
 
     .nav-link {
@@ -16,6 +62,15 @@
         font-size: 1rem;
         color: $color-text-2;
         transition: color 0.2s ease;
+        display: inline-flex;
+
+        @include respond(lg) {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.4s ease, transform 0.4s $transition-3;
+            font-size: 1.2rem;
+            display: flex;
+        }
 
         &::after {
             content: "";
@@ -46,6 +101,20 @@
             }
         }
     }
+
+    .lest-talk {
+        display: none;
+
+        @include respond(lg) {
+            transition: opacity 0.4s ease, transform 0.4s $transition-3;
+            transform: translateY(20px);
+            opacity: 0;
+            display: flex;
+            position: absolute;
+            bottom: 6rem;
+            left: 2rem;
+        }
+    }
 }
 
 .lest-talk {
@@ -58,6 +127,10 @@
     align-items: center;
     justify-content: center;
     font-weight: 500;
+
+    @include respond(lg) {
+        display: none;
+    }
 }
 
 .dark {
