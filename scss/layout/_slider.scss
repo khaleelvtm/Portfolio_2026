@@ -7,6 +7,11 @@
         height: 100vh;
         width: 100%;
         transition: transform 0.8s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+        @include respond(lg) {
+            overflow-x: hidden;
+            overflow-y: auto
+        }
     }
 
     .slide {
@@ -17,9 +22,20 @@
         justify-content: center;
         align-items: center;
         padding: 5rem 4rem 2rem;
+        overflow: hidden;
+
+        @include respond(lg) {
+            height: auto;
+            padding: 5rem 1.5rem;
+        }
 
         &.hero {
             padding-top: 8.375rem;
+
+            @include respond(lg) {
+                padding-top: 10rem;
+                padding-bottom: 0;
+            }
         }
 
         &.page-head {
@@ -30,6 +46,28 @@
         &.pr-pd {
             padding: 0;
             justify-content: end;
+        }
+
+        &.figma-slide {
+            @include respond(lg) {
+                padding-top: 0;
+            }
+        }
+
+        &.db-be {
+            justify-content: flex-start;
+        }
+
+    }
+}
+
+.core-skill,
+.case-studies,
+.what-main,
+.contact-main {
+    .slide {
+        @include respond(lg) {
+            padding: 2rem 1.5rem;
         }
     }
 }

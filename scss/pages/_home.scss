@@ -11,26 +11,58 @@
     align-items: end;
     position: relative;
 
+    @include respond(lg) {
+        padding: 1.5rem;
+        height: 70vh;
+    }
+
     .hero-content {
         flex: 0.6;
         position: relative;
         z-index: 1;
+
+        @include respond(lg) {
+            flex: 1;
+        }
     }
 
     .hello {
         font-weight: 500;
+
+        @include respond(lg) {
+            font-size: 1.5rem;
+        }
+    }
+
+    .tag {
+        margin-bottom: 1rem;
+
+        @include respond(lg) {
+            margin-bottom: 0.5rem;
+        }
     }
 
     .title {
+        font-size: clamp(2rem, 4.44vw, 7.125rem);
         font-weight: 300;
         line-height: 125%;
         margin-bottom: 1rem;
+
+        @include respond(lg) {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
     }
 
     .text {
+        font-size: clamp(1rem, 1.39vw, 2.18rem);
         font-weight: 400;
         line-height: 175%;
         margin-bottom: 1rem;
+
+        @include respond(lg) {
+            font-size: 1rem;
+        }
     }
 
     .download-cv {
@@ -71,6 +103,11 @@
         z-index: 0;
         top: -100px;
 
+        @include respond(lg) {
+            border-radius: 1.5rem;
+            overflow: hidden;
+        }
+
         img {
             height: 100%;
             width: 100%;
@@ -82,6 +119,10 @@
 .do-best {
     .content-section {
         margin-bottom: 2.5rem;
+
+        @include respond(lg) {
+            margin-bottom: 1.5rem;
+        }
     }
 }
 
@@ -91,12 +132,23 @@
     flex-direction: row;
     padding-left: 10rem;
 
+    @include respond(lg) {
+        padding-left: 0;
+        gap: 1.2rem;
+        flex-direction: column;
+    }
+
     .card {
         border: 2px solid $color-primary;
         padding: 2.5rem;
         position: relative;
         overflow: hidden;
         cursor: pointer;
+
+        @include respond(lg) {
+            border-width: 1px;
+            padding: 1.5rem;
+        }
 
         &::before {
             content: '';
@@ -153,11 +205,25 @@
             margin-bottom: 2.25rem;
             height: 4rem;
             width: 4rem;
+
+            @include respond(lg) {
+                margin-bottom: 0.3rem;
+                height: 2rem;
+                width: 2rem;
+            }
         }
 
         .head {
             margin-bottom: 0.75rem;
             font-weight: 500;
+
+            @include respond(lg) {
+                margin-bottom: 0.3rem;
+
+                br {
+                    display: none
+                }
+            }
         }
 
         .text {
@@ -169,11 +235,20 @@
             -webkit-box-orient: vertical;
             overflow: hidden;
             text-overflow: ellipsis;
+
+            @include respond(lg) {
+                margin-bottom: 0;
+                font-size: 1rem;
+            }
         }
 
         span {
             display: inline-flex;
             float: right;
+
+            @include respond(lg) {
+                display: none;
+            }
         }
     }
 }
@@ -185,12 +260,24 @@
     justify-content: space-between;
     align-items: center;
 
+    @include respond(lg) {
+        flex-direction: column;
+    }
+
     .stats-grid {
         flex: 0.5;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         gap: 1.5rem;
+
+        @include respond(lg) {
+            flex: 1;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            width: 100%;
+            margin-bottom: 2rem;
+        }
 
         .card {
             background-color: $color-primary-light;
@@ -204,6 +291,13 @@
             flex-direction: column;
             justify-content: space-between;
             min-height: 250px;
+
+            @include respond(lg) {
+                border-radius: 0.5rem;
+                padding: 1rem;
+                min-width: auto;
+                min-height: auto;
+            }
 
             &:hover {
                 transform: translateY(-8px) scale(1.05);
@@ -230,15 +324,30 @@
 
             .label {
                 font-weight: 200;
+
+                @include respond(lg) {
+                    font-weight: 400;
+                }
             }
 
             .title {
                 @include body-normal;
                 font-weight: 500;
+
+                @include respond(lg) {
+                    font-size: 1rem;
+                    margin-bottom: 0.3rem
+                }
             }
 
             .text {
                 @include body-small;
+
+                @include respond(lg) {
+                    font-size: 1rem;
+                    font-weight: 400;
+                    opacity: 0.8;
+                }
             }
         }
     }
@@ -257,13 +366,22 @@
 
     .section-title {
         font-weight: 500;
-        margin-bottom: 1.5rem
+        margin-bottom: 1.5rem;
+
+        @include respond(lg) {
+            margin-bottom: 1rem
+        }
     }
 
     .section-text {
         @include body-normal;
         opacity: 0.75;
         margin-bottom: 1.5rem;
+
+        @include respond(lg) {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
     }
 
     .read-more-btn {
@@ -305,8 +423,16 @@
     justify-content: space-between;
     align-items: center;
 
+    @include respond(lg) {
+        flex-direction: column;
+    }
+
     .content-left {
         flex: 0.4;
+
+        @include respond(lg) {
+            margin-bottom: 1rem;
+        }
     }
 
     .content-right {
@@ -342,6 +468,10 @@
         .item-title {
             font-weight: 500;
             margin-bottom: 0.75rem;
+
+            @include respond(lg) {
+                margin-bottom: 0.2rem;
+            }
         }
 
         .item-desc {
