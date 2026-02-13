@@ -847,6 +847,9 @@ section {
     padding-top: 0;
   }
 }
+.main .slide.db-be {
+  justify-content: flex-start;
+}
 
 @media (max-width: 992px) {
   .core-skill .slide,
@@ -1058,6 +1061,7 @@ body.loaded header {
   }
 }
 .hero-card .title {
+  font-size: clamp(2rem, 4.44vw, 7.125rem);
   font-weight: 300;
   line-height: 125%;
   margin-bottom: 1rem;
@@ -1069,9 +1073,15 @@ body.loaded header {
   }
 }
 .hero-card .text {
+  font-size: clamp(1rem, 1.39vw, 2.18rem);
   font-weight: 400;
   line-height: 175%;
   margin-bottom: 1rem;
+}
+@media (max-width: 992px) {
+  .hero-card .text {
+    font-size: 1rem;
+  }
 }
 .hero-card .download-cv {
   display: inline-flex;
@@ -1743,6 +1753,38 @@ body.loaded header {
 .pr-pd .project .content-section {
   position: relative;
   z-index: 1;
+}
+
+.dribbble-shots {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.dribbble-shots .shots-container {
+  display: grid;
+  justify-items: start;
+  grid-template-columns: auto auto auto auto;
+  gap: 1.5rem;
+  height: calc(100vh - 20rem);
+  margin-top: 2rem;
+}
+.dribbble-shots .shots-container .shot-card a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.dribbble-shots .shots-container .shot-card a img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 12px rgba(10, 95, 89, 0.1);
+  border: 0.5px solid rgba(10, 95, 89, 0.4);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.dribbble-shots .shots-container .shot-card a img:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 20px 40px rgba(5, 46, 43, 0.4);
+  border-color: rgba(253, 253, 241, 0.3);
 }
 
 .portfolio {

@@ -111,6 +111,18 @@
             </div>
 
             <!-- Dribbble & Behance -->
+            <div class="slide db-be" data-header="light">
+                <div class="dribbble-shots container">
+                    <h5 class="section-head">Visual Design Showcase</h5>
+                    <h4 class="section-title">Visual explorations and interface concepts across web and product
+                        design</h4>
+                    <h6 class="section-text">A curated collection of UI shots, concept designs, and visual
+                        experiments that highlight interface aesthetics, layout balance, and design clarity.</h6>
+                    <div id="dribbble-grid" class="shots-container"></div>
+                </div>
+            </div>
+
+            <!-- Dribbble & Behance -->
             <div class="slide" data-header="light">
                 <div class="portfolio container">
                     <div class="dribbble-section">
@@ -160,6 +172,23 @@
             </div>
         </div>
     </main>
+
+    <script>
+
+        const tk = 'tcdPtAQm_gald3Ho6uRnbNCyhuG82uMb5OIOWiOnSWk', el = document.getElementById('dribbble-grid');
+
+        fetch(`https://api.dribbble.com/v2/user/shots?access_token=${tk}`)
+            .then(r => r.json())
+            .then(data => {
+                el.innerHTML = data.map(s => `
+            <div class="shot-card">
+                <a href="${s.html_url}" target="_blank">
+                    <img src="${s.images.normal}" alt="${s.title}">
+                </a>
+            </div>`).join('');
+            })
+            .catch(e => console.error(e));
+    </script>
 
 </body>
 

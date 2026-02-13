@@ -1,4 +1,43 @@
 // Case Studies page specific styles
+.dribbble-shots {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    .shots-container {
+        display: grid;
+        justify-items: start;
+        grid-template-columns: auto auto auto auto;
+        gap: 1.5rem;
+        height: calc(100vh - 20rem);
+        // overflow: overlay;
+        margin-top: 2rem;
+
+        .shot-card {
+            a {
+                display: block;
+                height: 100%;
+                width: 100%;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 0.5rem;
+                    // overflow: hidden;
+                    box-shadow: 0 2px 12px transparentize($color-primary, 0.9);
+                    border: 0.5px solid transparentize($color-primary, 0.6);
+                    transition: $transition-1;
+
+                    &:hover {
+                        transform: translateY(-8px) scale(1.05);
+                        box-shadow: 0 20px 40px transparentize($color-text, 0.6);
+                        border-color: transparentize($color-secondary-lightern, 0.7);
+                    }
+                }
+            }
+        }
+    }
+}
 
 .portfolio {
     display: flex;

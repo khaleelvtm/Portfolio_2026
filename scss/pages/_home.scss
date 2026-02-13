@@ -43,6 +43,7 @@
     }
 
     .title {
+        font-size: clamp(2rem, 4.44vw, 7.125rem);
         font-weight: 300;
         line-height: 125%;
         margin-bottom: 1rem;
@@ -54,9 +55,14 @@
     }
 
     .text {
+        font-size: clamp(1rem, 1.39vw, 2.18rem);
         font-weight: 400;
         line-height: 175%;
         margin-bottom: 1rem;
+
+        @include respond(lg) {
+            font-size: 1rem;
+        }
     }
 
     .download-cv {
