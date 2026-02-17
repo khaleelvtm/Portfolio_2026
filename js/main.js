@@ -76,6 +76,35 @@ function setActiveNavigation() {
     });
 }
 
+function initMobileMenu() {
+    const menuBtn = document.getElementById('mobileMenu');
+    const closeBtn = document.getElementById('closeBtn');
+    const navMenu = document.getElementById('nevMenu');
+    const overlay = document.getElementById('overlay');
+
+    if (!menuBtn || !navMenu || !overlay) {
+        console.warn('Mobile menu elements not found');
+        return;
+    }
+
+    const toggleMenu = () => {
+        const isActive = navMenu.classList.toggle('active');
+        menuBtn.classList.toggle('active');
+        overlay.classList.toggle('active');
+        document.body.style.overflow = isActive ? 'hidden' : '';
+    };
+
+    menuBtn.addEventListener('click', toggleMenu);
+    closeBtn?.addEventListener('click', toggleMenu);
+    overlay.addEventListener('click', toggleMenu);
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && navMenu.classList.contains('active')) {
+            toggleMenu();
+        }
+    });
+}
+
 // Initialize when DOM is ready
 document.addEventListener("DOMContentLoaded", async () => {
     await loadMetaTags();
@@ -84,4 +113,5 @@ document.addEventListener("DOMContentLoaded", async () => {
     await loadPartial("modal-placeholder", "partials/modal.html");
 
     setActiveNavigation();
+    initMobileMenu();
 });

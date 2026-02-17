@@ -9,6 +9,11 @@
     align-items: center;
     justify-content: space-between;
 
+    @include respond(lg) {
+        top: 1rem;
+        padding: 0 1.5rem;
+    }
+
     .site-header-inner {
         display: flex;
         align-items: center;
@@ -21,6 +26,10 @@
             width: 1px;
             background-color: $color-text-2;
             opacity: 0.25;
+
+            @include respond(lg) {
+                display: none;
+            }
         }
 
         .site-brand {
@@ -32,7 +41,87 @@
             svg {
                 height: 2.5rem;
                 width: auto;
+
+                @include respond(lg) {
+                    height: 2rem;
+                }
             }
         }
+
+        .close-menu {
+            @include respond(lg) {
+                display: inline-flex;
+
+                i {
+                    width: 1.5rem;
+                    display: inline-flex;
+                    height: 1.5rem;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.mobile-menu,
+.close-menu {
+    display: none;
+    background-color: transparent;
+    color: $color-primary;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    border: 1px solid transparentize($color-text-2, 0.8);
+    align-items: center;
+    justify-content: center;
+
+    &:hover,
+    &:active {
+        background-color: $color-primary-light;
+        color: $color-white;
+
+        i {
+
+            background-color: $color-white;
+        }
+    }
+
+    @include respond(lg) {
+        display: inline-flex;
+
+        i {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    }
+}
+
+.close-menu {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+}
+
+.dark {
+    .mobile-menu {
+        color: $color-white;
+        border-color: transparentize($color-white, 0.8);
+    }
+}
+
+.overlay {
+    background-color: transparentize($color-text, 0.6);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
     }
 }

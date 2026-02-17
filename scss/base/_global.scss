@@ -9,11 +9,16 @@ body {
     background: $color-bg;
     color: $color-text;
     font-weight: 400;
+    touch-action: none;
 }
 
 .container {
     width: 100%;
     padding: 0 4rem;
+
+    @include respond(lg) {
+        padding: 0;
+    }
 }
 
 section {
@@ -32,6 +37,12 @@ section {
     line-height: 13px;
     font-weight: 500;
     margin-bottom: 1.2rem;
+
+    @include respond(lg) {
+        font-size: 1rem;
+        line-height: 1.2;
+        height: auto;
+    }
 
     &::before {
         content: '';
@@ -62,6 +73,12 @@ section {
     align-items: center;
     justify-content: center;
     font-weight: 500;
+
+    @include respond(lg) {
+        font-size: 0.875rem;
+        padding: 0.3rem 0.8rem;
+        height: auto;
+    }
 }
 
 .page-head-section {
@@ -69,11 +86,20 @@ section {
     flex-direction: column;
     gap: 4rem;
 
+    @include respond(lg) {
+        gap: 2rem;
+    }
+
     .content-section {
         display: flex;
         align-items: flex-end;
         justify-content: space-between;
         padding: 0 8rem;
+
+        @include respond(lg) {
+            padding: 0 1.5rem;
+            flex-direction: column;
+        }
 
         .tag {
             margin-bottom: 1rem;
@@ -81,10 +107,18 @@ section {
 
         .section-title {
             font-weight: 300;
+
+            @include respond(lg) {
+                font-weight: 500;
+            }
         }
 
         .left-content {
             flex: 0.4;
+
+            @include respond(lg) {
+                margin-bottom: 0.5rem;
+            }
         }
 
         .right-content {
@@ -93,6 +127,10 @@ section {
 
         .section-text {
             font-weight: 400;
+
+            @include respond(lg) {
+                font-size: 1rem;
+            }
         }
     }
 
