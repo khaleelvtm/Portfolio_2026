@@ -12,6 +12,11 @@
         // overflow: overlay;
         margin-top: 2rem;
 
+        @include respond(lg) {
+            grid-template-columns: auto auto;
+            height: auto;
+        }
+
         .shot-card {
             a {
                 display: block;

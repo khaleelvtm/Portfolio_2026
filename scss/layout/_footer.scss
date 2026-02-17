@@ -50,6 +50,10 @@
 
             .label {
                 font-weight: 400;
+
+                @include respond(sm) {
+                    font-size: 0.8rem;
+                }
             }
 
             .footer-email {
@@ -58,6 +62,10 @@
                 text-decoration: none;
                 display: inline-flex;
                 transition: $transition-1;
+
+                @include respond(sm) {
+                    font-size: 1rem;
+                }
 
                 &:hover {
                     color: $color-secondary;
@@ -98,6 +106,10 @@
         gap: 1.25rem;
         margin-top: 2.5rem;
         list-style: none;
+
+        @include respond(sm) {
+            flex-wrap: wrap;
+        }
 
         li {
             border-right: 1px solid transparentize($color-white, 0.9);
@@ -150,6 +162,12 @@
         @include respond(lg) {
             gap: 10px;
         }
+
+        @include respond(sm) {
+            gap: 0;
+            grid-template-columns: 1fr;
+        }
+
 
         .nav-item {
             text-decoration: none;
