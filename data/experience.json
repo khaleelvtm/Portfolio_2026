@@ -1,0 +1,138 @@
+[
+    {
+        "date": "Mar 2025 - Present",
+        "company": "Core Cognitics",
+        "role": "UX Architect",
+        "location": "Kozhikode, Kerala, India",
+        "desc1": "As a UX Architect at Core Cognitics, I lead the user experience strategy across multiple digital platforms, including SaaS products and enterprise systems. My role spans the complete design lifecycle — from research and conceptualization to architecture planning, wireframing, and validation — ensuring alignment between user needs and business objectives.",
+        "bullets": [
+            "Defined and implemented UX design systems, standards, and scalable best practices across products.",
+            "Designed end-to-end user flows, information architectures, and structured wireframes to support complex, multi-role systems.",
+            "Conducted stakeholder workshops, interviews, and user research to uncover insights and identify usability challenges.",
+            "Collaborated closely with product managers, developers, and business analysts to ensure technical feasibility and consistency.",
+            "Translated complex business requirements into intuitive, user-centered digital experiences.",
+            "Supported development teams with detailed documentation and interaction specifications."
+        ],
+        "desc2": "This role strengthened my ability to merge business logic with design thinking — creating experiences that are strategically aligned, scalable, and functionally robust, not just visually appealing.",
+        "skills": [
+            "Figma",
+            "User Experience (UX)",
+            "User Experience Design (UED)",
+            "User Flows",
+            "User Interface Design",
+            "Information Architecture",
+            "Product Design",
+            "Design Systems"
+        ]
+    },
+    {
+        "date": "Mar 2022 - Mar 2025",
+        "company": "Freston Analytics",
+        "role": "Senior User Interface Designer",
+        "location": "Kozhikode, Kerala, India",
+        "desc1": "At Freston Analytics, I worked as a Senior UI Designer contributing to enterprise-grade digital platforms and data-driven solutions. My role focused on designing structured, intuitive interfaces that simplified complex analytics workflows while aligning with business objectives and technical feasibility.",
+        "bullets": [
+            "Designed user-centered interfaces for analytics dashboards and enterprise applications.",
+            "Created structured user flows, wireframes, and high-fidelity UI designs for web-based platforms.",
+            "Conducted UX research and collaborated with stakeholders to identify usability improvements.",
+            "Partnered with product managers, developers, and business teams to ensure design consistency and feasibility.",
+            "Utilized tools such as Figma, Axure RP, Sketch, and Miro to design, prototype, and validate solutions.",
+            "Contributed to improving visual standards and interaction consistency across multiple products."
+        ],
+        "desc2": "During my tenure, I strengthened my expertise in enterprise UX, data visualization interfaces, and scalable design systems. Working across remote and on-site environments enhanced my ability to collaborate across distributed teams while maintaining high design quality and delivery standards.",
+        "skills": [
+            "Figma",
+            "Axure RP",
+            "Sketch App",
+            "Jira",
+            "User Flows",
+            "User Interface Design",
+            "Design Systems",
+            "Product Design",
+            "Mobile Design",
+            "Wireframing",
+            "Sketching"
+        ]
+    },
+    {
+        "date": "Dec 2016 – Feb 2022",
+        "company": "SITENANO",
+        "role": "UX Designer & Web User Interface Developer",
+        "location": "Kozhikode, Kerala, India ",
+        "desc1": "At SITENANO, I played a key role in designing and developing web and mobile applications across multiple industries, gradually evolving from a Web UI Developer into a UX-focused role. My work combined frontend implementation with structured UX thinking, ensuring intuitive, scalable, and user-centered digital experiences.",
+        "bullets": [
+            "Designed and developed responsive user interfaces using HTML, CSS, LESS, SASS, and Bootstrap",
+            "Crafted intuitive navigation systems and structured layouts for web and mobile applications",
+            "Created user flows, wireframes, and interaction models to support complex digital products.",
+            "Contributed to e-commerce platforms, online ordering systems, and enterprise tools with a focus on usability and performance.",
+            "Designed features such as product pages, search functionality, shopping carts, dashboards, and admin portals.",
+            "Collaborated closely with developers and stakeholders to ensure technical feasibility and consistent visual language across products."
+        ],
+        "desc2": "During my tenure, I gained hands-on experience designing for industries including food & beverage, e-commerce, and sports platforms. This role strengthened my foundation in frontend development while shaping my transition into UX design — focusing not just on visual appeal, but on structure, user flows, and scalable product thinking.",
+        "skills": [
+            "Web Design",
+            "Bootstrap",
+            "WordPress",
+            "Web Development",
+            "SASS",
+            "LESS",
+            "E-commerce",
+            "CSS",
+            "HTML",
+            "Adobe Photoshop",
+            "Adobe XD"
+        ]
+    },
+    {
+        "date": "Mar 2016 – Nov 2016",
+        "company": "Mindbridge Business Solutions",
+        "role": "UI Designer",
+        "location": "Kozhikode, Kerala, India ",
+        "desc1": "At Mindbridge Business Solutions, I worked as a UI Designer focusing on designing intuitive and visually structured interfaces for property management software. My role involved understanding user requirements, conducting design research, and translating business workflows into clean and usable digital interfaces.",
+        "bullets": [
+            "Designed user interfaces for property management systems with a focus on usability and structured navigation.",
+            "Conducted design research to understand user behavior and business requirements.",
+            "Created wireframes and high-fidelity UI layouts aligned with product functionality.",
+            "Designed the company’s logo and contributed to establishing its initial visual identity.",
+            "Ensured consistent branding and interface standards across the platform."
+        ],
+        "desc2": "This role strengthened my foundation in interface design and research-driven decision-making, shaping my early transition into structured UX thinking and product-focused design.",
+        "skills": [
+            "Adobe Photoshop",
+            "Web Design",
+            "Branding",
+            "Web Development",
+            "Logo Design",
+            "User Interface Design",
+            "Sketching"
+        ]
+    },
+    {
+        "date": "Aug 2013 – Feb 2016",
+        "company": "Flamboya Media LLP",
+        "role": "Web Designer & Web Developer",
+        "location": "Kozhikode, Kerala, India ",
+        "desc1": "At Flamboya Media LLP, I began my career as a Web Designer and later progressed into a Web Developer role. During this time, I worked on designing and developing visually engaging, responsive websites for businesses across different industries, contributing to both branding and digital presence.",
+        "bullets": [
+            "Designed visually appealing and user-friendly website interfaces.",
+            "Developed responsive websites using HTML, CSS, Bootstrap, and modern front-end frameworks.",
+            "Translated brand identities into cohesive digital experiences across web platforms.",
+            "Focused on usability, structured layouts, and intuitive navigation.",
+            "Collaborated with creative and development teams to deliver complete website solutions from concept to deployment.",
+            "Contributed to branding initiatives including visual identity and marketing assets."
+        ],
+        "desc2": "This role laid the foundation for my career in digital product design. It strengthened my understanding of frontend technologies, user experience fundamentals, and the relationship between branding and digital interaction — setting the stage for my transition into UX and product-focused design roles.",
+        "skills": [
+            "Adobe Photoshop",
+            "Adobe Illustrator",
+            "Dreamweaver",
+            "Bootstrap",
+            "Material Design",
+            "Web Development",
+            "CSS",
+            "HTML",
+            "Web Design",
+            "Graphic Design"
+        ]
+    }
+]

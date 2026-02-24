@@ -1,27 +1,26 @@
-
 // Load services data from JSON file
 async function loadServicesData() {
     try {
-        const response = await fetch('data/services.json');
+        const response = await fetch("data/services.json");
         if (!response.ok) {
-            throw new Error('Failed to load services data');
+            throw new Error("Failed to load services data");
         }
         const hoverData = await response.json();
         return hoverData;
     } catch (error) {
-        console.error('Error loading services data:', error);
+        console.error("Error loading services data:", error);
         return [];
     }
 }
 
 function updateContent(data, detailsArea, badge, desc, list) {
-    detailsArea.classList.add('fade');
+    detailsArea.classList.add("fade");
 
     setTimeout(() => {
         badge.textContent = data.badge;
         desc.textContent = data.text;
-        list.innerHTML = data.points.map(p => `<li>${p}</li>`).join('');
-        detailsArea.classList.remove('fade');
+        list.innerHTML = data.points.map((p) => `<li>${p}</li>`).join("");
+        detailsArea.classList.remove("fade");
     }, 150);
 }
 
@@ -34,10 +33,10 @@ async function initializeServicesList() {
     }
 
     // Get all sections with section-head
-    const sections = document.querySelectorAll('.what.container');
+    const sections = document.querySelectorAll(".what.container");
 
     sections.forEach((section, sectionIndex) => {
-        const sectionHead = section.querySelector('.section-head');
+        const sectionHead = section.querySelector(".section-head");
         if (!sectionHead) return;
 
         const categoryName = sectionHead.textContent.trim();
@@ -45,7 +44,9 @@ async function initializeServicesList() {
 
         // Find elements for this section
         const navList = document.getElementById(`listItems-${sectionNumber}`);
-        const detailsArea = document.getElementById(`details-area-${sectionNumber}`);
+        const detailsArea = document.getElementById(
+            `details-area-${sectionNumber}`,
+        );
         const badge = document.getElementById(`badge-${sectionNumber}`);
         const desc = document.getElementById(`desc-${sectionNumber}`);
         const list = document.getElementById(`list-${sectionNumber}`);
@@ -55,7 +56,9 @@ async function initializeServicesList() {
         }
 
         // Filter services by category
-        const categoryServices = hoverData.filter(item => item.category === categoryName);
+        const categoryServices = hoverData.filter(
+            (item) => item.category === categoryName,
+        );
 
         if (categoryServices.length === 0) {
             return; // No services for this category
@@ -63,17 +66,19 @@ async function initializeServicesList() {
 
         // Populate the list
         categoryServices.forEach((item, index) => {
-            const div = document.createElement('div');
-            div.className = 'item';
+            const div = document.createElement("div");
+            div.className = "item";
             div.textContent = item.label;
 
             // Create a scoped selector for this section's items
             const sectionItemsSelector = `#listItems-${sectionNumber} .item`;
 
-            div.addEventListener('mouseenter', () => {
+            div.addEventListener("mouseenter", () => {
                 // Remove active from all items in this section
-                document.querySelectorAll(sectionItemsSelector).forEach(i => i.classList.remove('active'));
-                div.classList.add('active');
+                document
+                    .querySelectorAll(sectionItemsSelector)
+                    .forEach((i) => i.classList.remove("active"));
+                div.classList.add("active");
                 updateContent(item, detailsArea, badge, desc, list);
             });
 
@@ -81,7 +86,7 @@ async function initializeServicesList() {
 
             // Set first item as active
             if (index === 0) {
-                div.classList.add('active');
+                div.classList.add("active");
                 updateContent(item, detailsArea, badge, desc, list);
             }
         });
