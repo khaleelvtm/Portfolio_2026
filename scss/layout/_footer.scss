@@ -11,6 +11,10 @@
         display: flex;
         align-items: flex-start;
         padding-top: 4rem;
+
+        @include respond(lg) {
+            padding-top: 0;
+        }
     }
 }
 
@@ -23,17 +27,33 @@
     position: relative;
     box-shadow: 0 10px 30px transparentize($color-text, 0.75);
 
+    @include respond(lg) {
+        margin-bottom: 5rem;
+        border-radius: 1.5rem;
+        padding: 1.5rem;
+    }
+
     .footer-top {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-end;
 
+        @include respond(lg) {
+            flex-direction: column;
+            gap: 2rem;
+            justify-content: space-between;
+        }
+
         .footer-left {
             flex: 0.6;
 
             .label {
                 font-weight: 400;
+
+                @include respond(sm) {
+                    font-size: 0.8rem;
+                }
             }
 
             .footer-email {
@@ -43,6 +63,10 @@
                 display: inline-flex;
                 transition: $transition-1;
 
+                @include respond(sm) {
+                    font-size: 1rem;
+                }
+
                 &:hover {
                     color: $color-secondary;
                     transform: translateX(5px);
@@ -51,6 +75,10 @@
 
             .brand-col {
                 padding-top: 3.75rem;
+
+                @include respond(lg) {
+                    padding-top: 1.5rem;
+                }
 
                 .logo {
                     display: inline-flex;
@@ -66,9 +94,11 @@
 
         .footer-right {
             flex: 0.3;
+
+            @include respond(lg) {
+                width: 100%;
+            }
         }
-
-
     }
 
     .social-links {
@@ -76,6 +106,10 @@
         gap: 1.25rem;
         margin-top: 2.5rem;
         list-style: none;
+
+        @include respond(sm) {
+            flex-wrap: wrap;
+        }
 
         li {
             border-right: 1px solid transparentize($color-white, 0.9);
@@ -113,12 +147,27 @@
         font-size: 0.875rem;
         text-align: center;
         letter-spacing: 2px;
+
+        @include respond(lg) {
+            padding-top: 1.5rem;
+            margin-top: 1.5rem;
+        }
     }
 
     .nav-col {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
+
+        @include respond(lg) {
+            gap: 10px;
+        }
+
+        @include respond(sm) {
+            gap: 0;
+            grid-template-columns: 1fr;
+        }
+
 
         .nav-item {
             text-decoration: none;
@@ -153,4 +202,11 @@
     line-height: 300px;
     text-align: center;
     opacity: 0.4;
+
+    @include respond(lg) {
+        font-size: 7.5rem;
+        bottom: -1rem;
+        height: 140px;
+        line-height: 140px;
+    }
 }

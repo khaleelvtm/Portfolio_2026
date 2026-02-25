@@ -8,6 +8,7 @@
 
     <title>Khaleel Rehman | UX Architect & Product Designer</title>
 
+    <script src=" js/loading.js" defer></script>
     <script src="js/main.js" defer></script>
     <script src="js/slide.js" defer></script>
 
@@ -18,15 +19,16 @@
             "@type": "Person",
             "name": "Khaleel Rehman",
             "jobTitle": "UX Architect & Product Designer",
-            "url": "https://www.yourdomain.com/",
+            "url": "https://khaleelurahman.com/",
             "sameAs": [
-                "https://www.linkedin.com/in/yourprofile",
-                "https://www.behance.net/yourprofile",
-                "https://dribbble.com/yourprofile"
+                "https://www.linkedin.com/in/khaleelurahman/",
+                "https://www.behance.net/khaleelurahman",
+                "https://dribbble.com/khaleelurahman",
+                "https://www.figma.com/@khaleelrahman"
             ],
             "worksFor": {
-                "@type": "Organization",
-                "name": "Dynoz"
+                "@type": "Personal",
+                "name": "Khaleelu Rahman"
             },
             "knowsAbout": [
                 "UX Architecture",
@@ -38,21 +40,62 @@
             ]
         }
     </script>
+
+    <style>
+        #loader-wrapper {
+            position: fixed;
+            inset: 0;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            background-color: #FCFFFA;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity .8s cubic-bezier(.65, 0, .35, 1), visibility .8s cubic-bezier(.65, 0, .35, 1)
+        }
+    </style>
 </head>
 
 <body>
+    <!-- Loader -->
+    <div id="loader-wrapper">
+        <div class="logo-glow"></div>
+        <div class="loader-container">
+            <svg class="logo-svg" viewBox="0 0 201 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1237_144)">
+                    <path class="logo-path" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M18.6698 28.1029C16.7329 21.0111 18.1691 13.7103 21.3121 8.44036C25.0037 2.25082 30.9959 -1.03421 36.7688 0.291009C42.8936 1.69686 45.4903 6.37445 45.9279 11.5791C46.2968 15.9684 44.9315 20.6652 43.4165 23.1365C40.4378 27.9957 36.0574 31.2339 31.5431 33.3391C34.5558 36.2204 39.7001 39.175 45.6972 39.0767L45.8365 47.7714C36.5828 47.9227 28.732 43.0309 24.616 38.6328C23.8841 37.8505 23.2178 37.047 22.6142 36.2269C18.0134 37.1686 14.5828 37.1472 14.5828 37.1472L14.6162 28.4518C14.6162 28.4518 16.2446 28.4534 18.6698 28.1029ZM26.9994 25.8596C30.4103 24.4335 33.8645 22.2055 36.1008 18.5573C36.9162 17.2272 37.552 14.6779 37.3533 12.3153C37.223 10.7652 36.6868 9.18919 34.8628 8.77047C33.1983 8.38856 31.6413 9.35713 30.3191 10.7455C28.4246 12.7352 27.054 15.7028 26.5758 18.9789C26.2534 21.1869 26.3499 23.5414 26.9994 25.8596Z"
+                        fill="#0A5F59" />
+                    <path class="logo-path"
+                        d="M12.3342 41.1474V7.15496C12.3342 1.20643 15.6982 1.20646 15.6982 1.20646V0.356842H-0.000244141V1.20646C-0.000244141 1.20646 3.36374 1.20643 3.36374 7.15496V41.1474C3.36374 47.096 -0.000244141 47.0961 -0.000244141 47.0961V47.9457H15.6982V47.0961C15.6982 47.0961 12.3342 47.096 12.3342 41.1474Z"
+                        fill="#0A5F59" />
+                </g>
+                <path class="logo-path"
+                    d="M61.136 13.256L68.272 2.6H70.352L63.824 12.264L72.016 25H69.872L62.64 13.96L61.136 16.392V25H59.312V2.6H61.136V13.256ZM89.73 11.816V2.6H91.554V25H89.73V13.576H79.586V25H77.762V2.6H79.586V11.816H89.73ZM113.514 25H111.626L109.034 17.16H101.77L99.242 25H97.322L104.522 2.6H106.218L113.514 25ZM102.25 15.4H108.554L105.354 5.352L102.25 15.4ZM119.193 25V2.6H121.017V23.4H130.745V25H119.193ZM136.362 25V2.6H147.05V4.264H138.186V11.816H144.266L143.69 13.576H138.186V23.4H146.986V25H136.362ZM152.75 25V2.6H163.438V4.264H154.574V11.816H160.654L160.078 13.576H154.574V23.4H163.374V25H152.75ZM169.137 25V2.6H170.961V23.4H180.689V25H169.137ZM199.431 19.048C199.431 20.4133 199.143 21.5653 198.567 22.504C198.012 23.4427 197.234 24.1573 196.231 24.648C195.228 25.1173 194.066 25.352 192.743 25.352C191.42 25.352 190.247 25.1173 189.223 24.648C188.199 24.1787 187.399 23.4747 186.823 22.536C186.268 21.5973 185.991 20.4347 185.991 19.048V2.6H187.783V19.016C187.783 20.04 187.986 20.8933 188.391 21.576C188.818 22.2587 189.394 22.7813 190.119 23.144C190.866 23.4853 191.73 23.656 192.711 23.656C193.692 23.656 194.546 23.4853 195.271 23.144C196.018 22.8027 196.594 22.2907 196.999 21.608C197.426 20.904 197.639 20.04 197.639 19.016V2.6H199.431V19.048ZM64.216 30.2C64.84 30.2 65.464 30.288 66.088 30.464C66.712 30.64 67.28 30.952 67.792 31.4C68.304 31.848 68.712 32.472 69.016 33.272C69.32 34.056 69.472 35.064 69.472 36.296C69.472 37.24 69.392 38.032 69.232 38.672C69.072 39.312 68.856 39.832 68.584 40.232C68.328 40.632 68.04 40.968 67.72 41.24L69.568 47H65.92L64.624 42.56C64.544 42.56 64.456 42.568 64.36 42.584C64.28 42.584 64.2 42.584 64.12 42.584C64.04 42.584 63.968 42.584 63.904 42.584H62.488V47H58.984V30.2H64.216ZM63.544 39.392C63.976 39.392 64.336 39.352 64.624 39.272C64.928 39.192 65.176 39.04 65.368 38.816C65.576 38.592 65.72 38.28 65.8 37.88C65.896 37.48 65.944 36.952 65.944 36.296C65.944 35.72 65.896 35.248 65.8 34.88C65.72 34.512 65.576 34.232 65.368 34.04C65.176 33.832 64.928 33.696 64.624 33.632C64.336 33.552 63.976 33.512 63.544 33.512H62.488V39.392H63.544ZM84.3893 47V30.2H92.4293V33.44H87.8933V36.752H91.0613L90.0773 39.944H87.8693L87.8933 43.856H92.3813V47H84.3893ZM114.245 36.776V30.2H117.725V47H114.245V39.944H110.861V47H107.357V30.2H110.861V36.776H114.245ZM136.243 30.2L139.171 40.016L142.171 30.2H145.651L146.011 47H142.531V39.56L140.419 47H137.947L135.883 39.56V47H132.379L132.739 30.2H136.243ZM172.571 47H168.683L168.059 43.424H165.035L164.411 47H160.619L163.979 30.2H169.139L172.571 47ZM165.563 40.136H167.555L166.547 33.704L165.563 40.136ZM199.32 30.2V47H195.744L190.968 37.784V47.024L187.464 47V30.2H190.968L195.792 39.752V30.2H199.32Z"
+                    fill="#052E2B" />
+                <defs>
+                    <clipPath id="clip0_1237_144">
+                        <rect width="46" height="48" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg>
+        </div>
+    </div>
     <!-- Header Placeholder -->
     <header id="header-placeholder" class="site-header"></header>
 
     <!-- Main Content -->
-    <main class="main" id="mianContent">
+    <main class="main core-skill" id="mianContent">
         <div class="slider-container" id="slider">
             <!-- Home -->
             <div class="slide page-head" data-header="light">
                 <div class="page-head-section">
                     <div class="content-section">
                         <div class="left-content">
-                            <span class="tag">Core Skills</span>
+                            <span class="tag">Skills</span>
                             <h4 class="section-title">A strong mix of UX architecture, product design, and hands-on
                                 technical execution skills</h4>
                         </div>
@@ -111,7 +154,7 @@
                             and interface graphics that align with product goals and brand identity.</h6>
                         <ul class="skills-list">
                             <li><img src="assets/images/skill-photoshop.png" alt="">Adobe Photoshop</li>
-                            <li><img src="assets/images/skill-illustrator.png" alt="">Adobe Illustrator</li>
+                            <li><img src="assets/images/skill-Illustrator.png" alt="">Adobe Illustrator</li>
                             <li><img src="assets/images/skill-affinity.png" alt="">Affinity</li>
                             <li><img src="assets/images/skill-express.png" alt="">Adobe Express</li>
                             <li><img src="assets/images/skill-canva.png" alt="">Canva</li>
@@ -185,7 +228,7 @@
             <div class="slide pr-pd" data-header="light">
                 <div class="productivity container">
                     <div class="content-section">
-                        <h5 class="section-head">Frontend & Web Technologies</h5>
+                        <h5 class="section-head">Productivity & Office Tools</h5>
                         <h4 class="section-title">Supporting clear documentation, planning, and communication across
                             projects</h4>
                         <h6 class="section-text">Strong documentation and presentation skills are essential for

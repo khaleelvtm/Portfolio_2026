@@ -1,6 +1,6 @@
 <!-- Header -->
 <div class="site-header-inner">
-    <a href="index.html" class="site-brand">
+    <a href="index.html" class="site-brand" aria-label="Khaleel Rahman – Home">
         <svg class="logo" width="201" height="48" viewBox="0 0 201 48" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_1237_144)">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -21,13 +21,16 @@
         </svg>
     </a>
     <i></i>
-    <nav class="nav">
-        <ul>
-            <li><a href="index.html" class="nav-link">Hello</a></li>
-            <li><a href="core-skills.html" class="nav-link">Core Skills</a></li>
-            <li><a href="case-studies.html" class="nav-link">Case Studies</a></li>
-            <li><a href="what-i-do.html" class="nav-link">What I Do</a></li>
-        </ul>
+    <nav class="nav" id="nevMenu">
+        <button id="closeBtn" class="close-menu"><i class="mdi--close"></i></button>
+        <a href="index.html" class="nav-link">Hello</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="case-studies.html" class="nav-link">Case Studies</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="hire-me.html" class="lest-talk">Hire Me</a>
     </nav>
 </div>
-<a href="lets-talk.html" class="lest-talk">Let’s Talk</a>
+<a href="hire-me.html" class="lest-talk">Hire Me</a>
+
+<button id="mobileMenu" class="mobile-menu"><i class="mdi--dots-grid"></i></button>
+<div id="overlay" class="overlay"></div>

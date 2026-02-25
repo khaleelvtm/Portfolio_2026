@@ -1,8 +1,57 @@
 // Case Studies page specific styles
+.dribbble-shots {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    .shots-container {
+        display: grid;
+        justify-items: start;
+        grid-template-columns: auto auto auto auto;
+        gap: 1.5rem;
+        height: calc(100vh - 20rem);
+        // overflow: overlay;
+        margin-top: 2rem;
+
+        @include respond(lg) {
+            grid-template-columns: auto auto;
+            height: auto;
+        }
+
+        .shot-card {
+            a {
+                display: block;
+                height: 100%;
+                width: 100%;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 0.5rem;
+                    // overflow: hidden;
+                    box-shadow: 0 2px 12px transparentize($color-primary, 0.9);
+                    border: 0.5px solid transparentize($color-primary, 0.6);
+                    transition: $transition-1;
+
+                    &:hover {
+                        transform: translateY(-8px) scale(1.05);
+                        box-shadow: 0 20px 40px transparentize($color-text, 0.6);
+                        border-color: transparentize($color-secondary-lightern, 0.7);
+                    }
+                }
+            }
+        }
+    }
+}
 
 .portfolio {
     display: flex;
     gap: 4rem;
+
+    @include respond(lg) {
+        gap: 2rem;
+        flex-direction: column;
+    }
 
     .dribbble-section {
         background-color: #DD3E7B;
@@ -37,6 +86,11 @@
         position: relative;
         transition: $transition-1;
 
+        @include respond(lg) {
+            padding: 1.5rem;
+            border-radius: 1.5rem;
+        }
+
         &:hover {
             transform: translateY(-8px) scale(1.05);
 
@@ -53,6 +107,12 @@
             opacity: 0.1;
             z-index: 0;
             transition: $transition-1;
+
+            @include respond(lg) {
+                bottom: -40px;
+                right: -40px;
+                width: 200px;
+            }
         }
 
         .section-head {
@@ -75,6 +135,10 @@
             margin-bottom: 5rem;
             position: relative;
             z-index: 1;
+
+            @include respond(lg) {
+                margin-bottom: 1.5rem;
+            }
         }
     }
 }
@@ -88,6 +152,11 @@
     overflow: hidden;
     transition: $transition-1;
 
+    @include respond(lg) {
+        border-radius: 1.5rem;
+        padding: 1.5rem;
+    }
+
     &::after {
         content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='%23000' stroke-linejoin='round' stroke-width='1.5'%3E%3Ccircle cx='15' cy='12' r='3'/%3E%3Cpath d='M9 21a3 3 0 0 0 3-3v-3H9a3 3 0 1 0 0 6Z'/%3E%3Cpath stroke-linecap='round' d='M12 9v6H9a3 3 0 1 1 0-6zm0-6v6H9a3 3 0 0 1 0-6zm0 0v6h3a3 3 0 1 0 0-6z'/%3E%3C/g%3E%3C/svg%3E");
         position: absolute;
@@ -97,6 +166,13 @@
         opacity: 0.1;
         z-index: 0;
         transition: $transition-1;
+
+        @include respond(lg) {
+            bottom: -40px;
+            right: -40px;
+            width: 200px;
+        }
+
     }
 
     &:hover {
@@ -128,6 +204,10 @@
         margin-bottom: 10rem;
         position: relative;
         z-index: 1;
+
+        @include respond(lg) {
+            margin-bottom: 2rem;
+        }
     }
 
 
